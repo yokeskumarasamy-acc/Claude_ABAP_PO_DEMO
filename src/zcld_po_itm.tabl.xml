@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
@@ -40,6 +40,7 @@
      <NOTNULL>X</NOTNULL>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>EBELP</FIELDNAME>
@@ -50,6 +51,7 @@
      <NOTNULL>X</NOTNULL>
      <DATATYPE>NUMC</DATATYPE>
      <LENG>000005</LENG>
+     <MASK>  NUMC</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>MATNR</FIELDNAME>
@@ -58,6 +60,7 @@
      <INTLEN>000036</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000018</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>TXZ01</FIELDNAME>
@@ -66,6 +69,7 @@
      <INTLEN>000080</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>MENGE</FIELDNAME>
@@ -75,6 +79,7 @@
      <DATATYPE>DEC</DATATYPE>
      <LENG>000013</LENG>
      <DECIMALS>000003</DECIMALS>
+     <MASK>  DEC</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>MEINS</FIELDNAME>
@@ -83,6 +88,7 @@
      <INTLEN>000006</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000003</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>NETPR</FIELDNAME>
@@ -92,6 +98,7 @@
      <DATATYPE>DEC</DATATYPE>
      <LENG>000011</LENG>
      <DECIMALS>000002</DECIMALS>
+     <MASK>  DEC</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>NETWR</FIELDNAME>
@@ -101,6 +108,7 @@
      <DATATYPE>DEC</DATATYPE>
      <LENG>000013</LENG>
      <DECIMALS>000002</DECIMALS>
+     <MASK>  DEC</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>WERKS</FIELDNAME>
@@ -109,6 +117,7 @@
      <INTLEN>000008</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000004</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
    </DD03P_TABLE>
   </asx:values>

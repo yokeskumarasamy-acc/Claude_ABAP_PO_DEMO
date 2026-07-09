@@ -1,21 +1,14 @@
-class ZCL_ABAP_PO_LOAD definition
-  public
-  final
-  create public .
-
-public section.
-  interfaces IF_OO_ADT_CLASSRUN .
-protected section.
-private section.
+CLASS zcl_abap_po_load DEFINITION
+  PUBLIC FINAL CREATE PUBLIC.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
-
-
-CLASS ZCL_ABAP_PO_LOAD IMPLEMENTATION.
-
+CLASS zcl_abap_po_load IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
-    " Load PO Headers
     DATA lt_header TYPE TABLE OF zcld_po_header.
     lt_header = VALUE #(
       ( ebeln = '4500000001' bukrs = '1000' bsart = 'NB' lifnr = '0000100001' bedat = '20240101' ekorg = '1000' ekgrp = '001' waers = 'USD' )
@@ -29,7 +22,6 @@ CLASS ZCL_ABAP_PO_LOAD IMPLEMENTATION.
     COMMIT WORK AND WAIT.
     out->write( |{ lines( lt_header ) } PO headers loaded.| ).
 
-    " Load PO Items
     DATA lt_item TYPE TABLE OF zcld_po_itm.
     lt_item = VALUE #(
       ( ebeln = '4500000001' ebelp = '00010' matnr = 'MAT-1000' txz01 = 'Office Chair'    menge = '10' meins = 'EA' netpr = '150.00'  netwr = '1500.00'  werks = '1000' )
@@ -50,5 +42,4 @@ CLASS ZCL_ABAP_PO_LOAD IMPLEMENTATION.
     out->write( 'Data load complete!' ).
 
   ENDMETHOD.
-
 ENDCLASS.

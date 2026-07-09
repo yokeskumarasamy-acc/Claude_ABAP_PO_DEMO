@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
@@ -40,6 +40,7 @@
      <NOTNULL>X</NOTNULL>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>BUKRS</FIELDNAME>
@@ -48,6 +49,7 @@
      <INTLEN>000008</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000004</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>BSART</FIELDNAME>
@@ -56,6 +58,7 @@
      <INTLEN>000008</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000004</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>LIFNR</FIELDNAME>
@@ -64,6 +67,7 @@
      <INTLEN>000020</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>BEDAT</FIELDNAME>
@@ -72,6 +76,7 @@
      <INTLEN>000016</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000008</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>EKORG</FIELDNAME>
@@ -80,6 +85,7 @@
      <INTLEN>000008</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000004</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>EKGRP</FIELDNAME>
@@ -88,6 +94,7 @@
      <INTLEN>000006</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000003</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
     <DD03P>
      <FIELDNAME>WAERS</FIELDNAME>
@@ -96,6 +103,7 @@
      <INTLEN>000010</INTLEN>
      <DATATYPE>CHAR</DATATYPE>
      <LENG>000005</LENG>
+     <MASK>  CHAR</MASK>
     </DD03P>
    </DD03P_TABLE>
   </asx:values>
