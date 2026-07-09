@@ -1,17 +1,15 @@
-class ZCL_ABAP_PO_LOAD definition
-  public
-  final
-  create public .
+CLASS zcl_abap_po_load DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-  interfaces IF_OO_ADT_CLASSRUN .
-protected section.
-private section.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
-
-
-CLASS ZCL_ABAP_PO_LOAD IMPLEMENTATION.
+CLASS zcl_abap_po_load IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
