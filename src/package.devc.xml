@@ -3,6 +3,8 @@
   <asx:values>
     <DEVC>
       <CTEXT>Claude ABAP Demo Package</CTEXT>
+      <DLVUNIT>LOCAL</DLVUNIT>
+      <PDEVCLASS/>
     </DEVC>
   </asx:values>
 </asx:abap>
