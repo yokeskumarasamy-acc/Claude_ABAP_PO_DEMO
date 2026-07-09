@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
-  <asx:values>
-    <DATA>
-      <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
-      <STARTING_FOLDER>/src/</STARTING_FOLDER>
-      <FOLDER_LOGIC>FULL</FOLDER_LOGIC>
-      <IGNORE>
-        <item>.gitignore</item>
-        <item>AGENTS.md</item>
-        <item>README.md</item>
-        <item>*.md</item>
-      </IGNORE>
-    </DATA>
-  </asx:values>
+ <asx:values>
+  <DATA>
+   <MASTER_LANGUAGE>E</MASTER_LANGUAGE>
+   <STARTING_FOLDER>/src/</STARTING_FOLDER>
+   <FOLDER_LOGIC>FULL</FOLDER_LOGIC>
+   <IGNORE>
+    <item>.gitignore</item>
+    <item>AGENTS.md</item>
+    <item>README.md</item>
+    <item>*.md</item>
+   </IGNORE>
+  </DATA>
+ </asx:values>
 </asx:abap>
