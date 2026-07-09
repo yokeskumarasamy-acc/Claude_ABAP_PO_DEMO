@@ -24,8 +24,9 @@ CLASS ZCL_SO_LOAD IMPLEMENTATION.
              meins TYPE zcld_so_itm-vrkme,
              werks TYPE zcld_so_itm-werks,
            END OF ty_mat.
+    TYPES tt_mat TYPE STANDARD TABLE OF ty_mat WITH EMPTY KEY.
 
-    DATA(lt_mat) = VALUE STANDARD TABLE OF ty_mat(
+    DATA(lt_mat) = VALUE tt_mat(
       ( matnr = 'MAT-1000' arktx = 'Office Chair'    netpr = '150.00'  meins = 'EA' werks = '1000' )
       ( matnr = 'MAT-2000' arktx = 'Laptop Computer' netpr = '800.00'  meins = 'EA' werks = '1000' )
       ( matnr = 'MAT-3000' arktx = 'Steel Pipes'     netpr = '5.00'    meins = 'KG' werks = '2000' )
