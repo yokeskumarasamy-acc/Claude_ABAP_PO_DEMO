@@ -8,6 +8,8 @@
       <STATE>1</STATE>
       <CLSCCINCL>X</CLSCCINCL>
       <FIXPT>X</FIXPT>
+      <CATEGORY>0</CATEGORY>
+      <EXPOSURE>2</EXPOSURE>
       <CLSNMSPC>X</CLSNMSPC>
     </VSEOCLASS>
   </asx:values>
