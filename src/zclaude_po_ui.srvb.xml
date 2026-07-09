@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SRVB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SRVB>
+    <SRVBNAME>ZCLAUDE_PO_UI</SRVBNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>Service Binding: Claude PO Demo UI (OData V4)</DDTEXT>
+    <BINDING_TYPE>ODATA</BINDING_TYPE>
+    <BINDING_CATEGORY>UI</BINDING_CATEGORY>
+    <PROTOCOL>ODATA</PROTOCOL>
+    <PROTOCOL_VERSION>V4</PROTOCOL_VERSION>
+    <SRVDNAME>ZCLAUDE_PO_SRV</SRVDNAME>
+    <SERVICES>
+     <item>
+      <SERVICE_NAME>ZCLAUDE_PO_UI</SERVICE_NAME>
+      <SERVICE_VERSION>0001</SERVICE_VERSION>
+     </item>
+    </SERVICES>
+   </SRVB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
