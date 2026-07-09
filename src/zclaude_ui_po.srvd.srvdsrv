@@ -1,0 +1,5 @@
+@EndUserText.label: 'PO Demo OData Service'
+define service ZClaude_UI_PO {
+  expose ZClaude_C_PO_Header as PurchaseOrder;
+  expose ZClaude_C_PO_Item   as PurchaseOrderItem;
+}
