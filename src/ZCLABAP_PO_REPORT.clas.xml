@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+    <VSEOCLASS>
+      <CLSNAME>ZCLABAP_PO_REPORT</CLSNAME>
+      <LANGU>E</LANGU>
+      <DESCRIPT>Purchase Order Report - BTP ABAP Environment</DESCRIPT>
+      <STATE>1</STATE>
+      <CLSCCINCL>X</CLSCCINCL>
+      <FIXPT>X</FIXPT>
+      <CLSNMSPC>X</CLSNMSPC>
+    </VSEOCLASS>
+  </asx:values>
+</asx:abap>
