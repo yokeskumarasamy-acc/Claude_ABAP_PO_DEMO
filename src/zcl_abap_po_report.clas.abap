@@ -10,22 +10,22 @@ CLASS zcl_abap_po_report DEFINITION
 
     TYPES:
       BEGIN OF ty_po_line,
-        ebeln TYPE ekko-ebeln,
-        ebelp TYPE ekpo-ebelp,
-        bukrs TYPE ekko-bukrs,
-        bsart TYPE ekko-bsart,
-        lifnr TYPE ekko-lifnr,
-        bedat TYPE ekko-bedat,
-        ekorg TYPE ekko-ekorg,
-        ekgrp TYPE ekko-ekgrp,
-        waers TYPE ekko-waers,
-        matnr TYPE ekpo-matnr,
-        txz01 TYPE ekpo-txz01,
-        menge TYPE ekpo-menge,
-        meins TYPE ekpo-meins,
-        netpr TYPE ekpo-netpr,
-        netwr TYPE ekpo-netwr,
-        werks TYPE ekpo-werks,
+        purchaseorder          TYPE i_purchaseorder-purchaseorder,
+        purchaseorderitem      TYPE i_purchaseorderitem-purchaseorderitem,
+        companycode            TYPE i_purchaseorder-companycode,
+        purchaseordertype      TYPE i_purchaseorder-purchaseordertype,
+        supplier               TYPE i_purchaseorder-supplier,
+        purchaseorderdate      TYPE i_purchaseorder-purchaseorderdate,
+        purchasingorganization TYPE i_purchaseorder-purchasingorganization,
+        purchasinggroup        TYPE i_purchaseorder-purchasinggroup,
+        documentcurrency       TYPE i_purchaseorder-documentcurrency,
+        material               TYPE i_purchaseorderitem-material,
+        purchaseorderitemtext  TYPE i_purchaseorderitem-purchaseorderitemtext,
+        orderquantity          TYPE i_purchaseorderitem-orderquantity,
+        purchaseorderitemunit  TYPE i_purchaseorderitem-purchaseorderitemunit,
+        netpriceamount         TYPE i_purchaseorderitem-netpriceamount,
+        netamount              TYPE i_purchaseorderitem-netamount,
+        plant                  TYPE i_purchaseorderitem-plant,
       END OF ty_po_line,
       tt_po_line TYPE STANDARD TABLE OF ty_po_line WITH DEFAULT KEY.
 
@@ -39,28 +39,28 @@ CLASS zcl_abap_po_report IMPLEMENTATION.
 
     DATA lt_po TYPE tt_po_line.
 
-    out->write( '=== Purchase Order Report - EKKO / EKPO ===' ).
+    out->write( '=== Purchase Order Report ===' ).
 
-    SELECT ekko~ebeln,
-           ekpo~ebelp,
-           ekko~bukrs,
-           ekko~bsart,
-           ekko~lifnr,
-           ekko~bedat,
-           ekko~ekorg,
-           ekko~ekgrp,
-           ekko~waers,
-           ekpo~matnr,
-           ekpo~txz01,
-           ekpo~menge,
-           ekpo~meins,
-           ekpo~netpr,
-           ekpo~netwr,
-           ekpo~werks
-      FROM ekko
-      INNER JOIN ekpo ON ekko~ebeln = ekpo~ebeln
-      WHERE ekpo~loekz = ' '
-      ORDER BY ekko~ebeln, ekpo~ebelp
+    SELECT po~purchaseorder,
+           poi~purchaseorderitem,
+           po~companycode,
+           po~purchaseordertype,
+           po~supplier,
+           po~purchaseorderdate,
+           po~purchasingorganization,
+           po~purchasinggroup,
+           po~documentcurrency,
+           poi~material,
+           poi~purchaseorderitemtext,
+           poi~orderquantity,
+           poi~purchaseorderitemunit,
+           poi~netpriceamount,
+           poi~netamount,
+           poi~plant
+      FROM i_purchaseorder AS po
+      INNER JOIN i_purchaseorderitem AS poi
+        ON po~purchaseorder = poi~purchaseorder
+      ORDER BY po~purchaseorder, poi~purchaseorderitem
       UP TO 500 ROWS
       INTO TABLE @lt_po.
 
