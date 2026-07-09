@@ -15,6 +15,7 @@ CLASS ZCL_SO_LOAD IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
+    " Generates 105 sales orders (5 original + 100 more) and 210 items
     " Material catalogue used to build items
     TYPES: BEGIN OF ty_mat,
              matnr TYPE zcld_so_itm-matnr,
