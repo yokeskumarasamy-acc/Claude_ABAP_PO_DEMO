@@ -1,4 +1,4 @@
-CLASS zclabap_po_report DEFINITION
+CLASS zcl_abap_po_report DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC.
@@ -28,7 +28,7 @@ CLASS zclabap_po_report DEFINITION
 
 ENDCLASS.
 
-CLASS zclabap_po_report IMPLEMENTATION.
+CLASS zcl_abap_po_report IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
