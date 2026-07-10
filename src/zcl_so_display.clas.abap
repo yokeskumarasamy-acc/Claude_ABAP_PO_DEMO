@@ -15,6 +15,7 @@ CLASS ZCL_SO_DISPLAY IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
+    " Reads all rows from ZCLD_SO_ITM and prints them as a formatted table
     " Fetch sales order items from the table
     SELECT vbeln, posnr, matnr, arktx, kwmeng, vrkme, netpr, netwr, werks
       FROM zcld_so_itm
